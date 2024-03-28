@@ -1,0 +1,40 @@
+{
+  "name": "essequi",
+  "version": "1.0.0",
+  "description": "A set of TypeScript decorators for make the work with Vue.js easiest.",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HertaTremblay/essequi.git"
+  },
+  "peerDependencies": {
+    "vue": "*"
+  },
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "compile": "tsc -p .",
+    "test:start": "karma start",
+    "test:watch": "concurrently --kill-others \"npm run compile -- -w\" \"npm run test:start -- --no-single-run --auto-watch\"",
+    "test": "npm run compile && npm run test:start"
+  },
+  "author": "TheoGlover",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.52",
+    "browserify": "^13.1.1",
+    "concurrently": "^3.1.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-browserify": "^5.1.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-spec-reporter": "0.0.26",
+    "typescript": "^2.3.2",
+    "vue": "^2.3.4",
+    "watchify": "^3.7.0"
+  },
+  "bugs": {
+    "url": "https://github.com/HertaTremblay/essequi.git/issues"
+  },
+  "homepage": "https://github.com/HertaTremblay/essequi.git"
+}
